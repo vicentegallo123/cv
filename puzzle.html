@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Puzzle respondele wey</title>
+    <style>
+        body {
+            font-family: 'Arial', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: medium;
+            font-weight: 1000;/*zoom las letras*/
+            display: flex;
+            flex-direction: column; /* Alinear elementos verticalmente */
+            align-items: center; /* Centra verticalmente */
+            justify-content: center; /* Centra horizontalmente y verticalmente */
+            height: 100vh; /* Ajusta el cuerpo para ocupar toda la altura de la ventana */
+            background-image: url('https://png.pngtree.com/background/20230401/original/pngtree-neon-high-tech-cyberpunk-sci-fi-city-background-picture-image_2247986.jpg');
+            /* Ruta de la imagen de fondo */
+            background-size: cover; /* Ajustar el tamaño de la imagen para cubrir el cuerpo */
+            background-position: center; /* Centrar la imagen de fondo horizontalmente y verticalmente */
+            background-attachment: fixed; /* Fijar la imagen de fondo para que no se desplace con el contenido */
+        }
+        
+        h1 {
+            background-color: rgba(255, 255, 255, 0.8);
+            font-family: 'Times New Roman', serif;
+            color: #926296;
+            padding: auto;
+            text-align: center;
+            border-radius: 20px;
+            margin-bottom: 20px; /* Espacio entre el título y las preguntas */
+        }
+        
+        .preguntas {
+            display: flex;
+            flex-direction: column; /* Alinear elementos verticalmente */
+            align-items: center; /* Centra horizontalmente */
+        }
+
+        .Pregunta, .enlace {
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para las preguntas */
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+.resultado{
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para las preguntas */
+}
+        input[type="text"] {
+            width: 100%;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Para acceder al CV tienes que responder más de 1 acierto</h1>
+    <div class="preguntas">
+        <div class="Pregunta">
+            <p>¿Quien  escribió la obra 'el coronel no tiene quien le escriba'?</p>
+            <input type="text" id="respuesta1">
+        </div>
+        <div class="Pregunta">
+            <p>¿Quien escribió la obra '1984'?</p>
+            <input type="text" id="respuesta2">
+        </div>
+        <div class="Pregunta">
+            <p>¿De qué color es Jesús?</p>
+            <input type="text" id="respuesta3">
+        </div>
+   
+        <button onclick="comprobar()">Respuestas Correctas</button>
+        <p id="resultado">Resultado</p>
+        <a href="C:\Users\Admin\Documents\tareas 6to\diseño web\img\cv.html" id="enlace" style="display:none">Vamos al CV</a>
+    </div>
+
+    <script>
+        function comprobar() {
+            const respuestasCorrectas = ["gabriel garcia marquez", "george orwell", "nigga"];
+            const respuestasUsuario = [
+                /*seleccionar el valor de elemento con id*/
+                document.getElementById("respuesta1").value,
+                document.getElementById("respuesta2").value,
+                document.getElementById("respuesta3").value
+            ];
+            let aciertos = 0;
+/*onvierte una cadena de texto en letras minúsculas.*/
+            for (let i = 0; i < respuestasCorrectas.length; i++) {
+                if (respuestasUsuario[i].toLowerCase() === respuestasCorrectas[i].toLowerCase()) {
+                    aciertos++;
+                }
+            }
+
+            const resultado = document.getElementById("resultado");
+            const enlace = document.getElementById("enlace");
+
+            resultado.innerHTML = `Tienes ${aciertos} respuestas correctas.`;
+
+            if (aciertos > 1) {
+                enlace.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
