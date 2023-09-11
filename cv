@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CV</title>
+  <style>
+    body {
+      font-family: 'Arial', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: medium;
+      font-weight: 1000;
+      display: flex;
+      justify-content: center;/*centrat todo el cuerpo*/
+      align-items: center;/*alinear todo el contenido*/
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbglsKjO2SxHOSVsa8GOUKfT9CaCR7HSQkRg&usqp=CAU'); /* Ruta de la imagen de fondo */
+      background-size: cover; /* Ajustar el tamaño de la imagen para cubrir el cuerpo */
+      background-position: center; /* Centrar la imagen de fondo horizontalmente y verticalmente */
+      background-attachment: fixed; /* Fijar la imagen de fondo para que no se desplace con el contenido */
+    }
+
+    .nombre {
+      background-image: url('https://images.vexels.com/media/users/3/144435/raw/9c5af286a9bf9bb8ef5240f179601e04-fondo-abstracto-con-cuadrados-y-lineas-de-colores.jpg'); /* Ruta de la imagen de fondo */
+      background-size: cover; /* Ajustar el tamaño de la imagen para cubrir el cuerpo */
+      background-position: center; /* Centrar la imagen de fondo horizontalmente y verticalmente */
+      background-attachment: fixed; /* Fijar la imagen de fondo para que no se desplace con el contenido */
+      padding: 30px;/* borde del centro*/
+      border-radius: 20px;/*radio*/
+      max-width: 800px;/*tamaño del ancho del borde*/
+      
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: 'Times New Roman', serif;
+      color: #024030;
+      
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;/* Cposicion bordes medida y margen de las img*/
+      float: left;
+      margin-right: 15px;
+  
+    }
+
+    .main ,p , h1{
+      float: left;
+      margin-right: 10px;
+      margin: 10px;
+      padding: 5px;
+      
+    }
+
+    .Informacion,
+    .Experiencia,
+    .Educación,
+    .HardSkills {
+      margin-top: 10px;
+      clear: both;/* separacion del todo el cuerpo*/
+
+      
+      
+    }
+
+    .Informacion h2,
+    .Experiencia h2,
+    .Educación h2,
+    .HardSkills h2 {
+      background-color: #163e5184;/* color y borde*/
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+  
+
+    p {
+      margin: 10px 0; /* margen y tamaño de los parrafos*/
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: medium;
+     
+    }
+    .info, .info2, .info3 {
+    display: flex;
+    align-items: flex-end; /* Centra verticalmente las clases de contacto */
+  }
+
+  .info img, .info2 img, .info3 img {
+    margin-right: 30px; /* Espacio entre la imagen y el párrafo hh */
+  }
+
+  </style>
+</head>
+
+<body>
+  
+  <div class="nombre">
+    <img class="main" src="C:\Users\Admin\Documents\tareas 6to\diseño web\img\WhatsApp Image 2023-08-23 at 14.38.57.jpeg" alt="Foto de Perfil">
+    <h1>Fernando Carrillo Carvajal</h1>
+    <p>Bartender/Estudiante de Ing en sistemas</p>
+
+    <div class="Informacion">
+      <img src="C:\Users\Admin\Documents\tareas 6to\diseño web\img\comunicar.png" alt="comunicar">
+      <h2>Contacto</h2>
+      <div class="info">
+        <img src="C:\Users\Admin\Documents\tareas 6to\diseño web\img\telefono.png" alt="telefono">
+        <p >3314305390</p>
+      </div>
+      <div class="info2">
+        <img src="C:\Users\Admin\Documents\tareas 6to\diseño web\img\aplicacion-de-bandeja-de-entrada-de-correo (1).png" alt="correo">
+        <p>vicentegallo96@gmail.com</p>
+      </div>
+      <div class="info3">
+        <img src="C:\Users\Admin\Documents\tareas 6to\diseño web\img\ubicacion.png" alt="ubicacion">
+        <p>Zapopan, Jalisco</p>
+      </div>
+    </div>
+
+    <div class="Educación">
+      <img src="C:\Users\Admin\Documents\tareas 6to\diseño web\img\conocimiento.png" alt="Educación">
+      <h2>Educación</h2>
+      <h3>Instituto Tecnológico Superior de Jalisco - En proceso</h3>
+      <p>Ingenieria en Sistemas Computacionales</p>
+    </div>
+
+    <div class="HardSkills">
+      <img src="C:\Users\Admin\Documents\tareas 6to\diseño web\img\habilidad.png" alt="habilidad">
+      <h2>Habilidades</h2>
+      <p>Inglés A2, Java, Paquetería de Office, MySQL, c++, flutter</p>
+    </div>
+
+    <div class="Experiencia">
+      <img src="C:\Users\Admin\Documents\tareas 6to\diseño web\img\customer-experience.png" alt="experiencia">
+      <h2>Experiencia Laboral</h2>
+      <h3>Loló - Bar Manager</h3>
+      <p>01-enero-2018 - 02-marzo-2023</p>
+      <p>“Profesional en servicio al cliente con experiencia en la
+        gestión de inventarios, costeo y diseño de menús y
+        cócteles. Habilidad en la negociación con proveedores
+        y capacidad para mantener altos niveles de
+        satisfacción del cliente."</p>
+    </div>
+  </div>
+</body>
+
+</html>
